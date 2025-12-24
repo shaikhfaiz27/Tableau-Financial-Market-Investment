@@ -1,0 +1,2979 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.1003.1601                               -->
+<workbook original-version='18.1' source-build='2025.2.4 (20252.25.1003.1601)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.IndividualControlFormatting.true...IndividualControlFormatting />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Finance Data' inline='true' name='federated.1rvt64d028b8dz11czbfh04hzu45' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Finance Data' name='textscan.041xi6807ck1xj11mlyxm1byo1pf'>
+            <connection class='textscan' directory='E:/Project/Tableau' filename='Finance Data.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.041xi6807ck1xj11mlyxm1byo1pf' name='Finance Data.csv' table='[Finance Data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='Volume' ordinal='0' />
+            <column datatype='real' name='Revenue' ordinal='1' />
+            <column datatype='real' name='Net_Profit' ordinal='2' />
+            <column datatype='real' name='Operating_Income' ordinal='3' />
+            <column datatype='real' name='Debt_to_Equity_Ratio' ordinal='4' />
+            <column datatype='real' name='Cash_Flow' ordinal='5' />
+            <column datatype='real' name='Profit_Margin' ordinal='6' />
+            <column datatype='integer' name='Buy_Orders' ordinal='7' />
+            <column datatype='integer' name='Sell_Orders' ordinal='8' />
+            <column datatype='integer' name='Net_Inflows' ordinal='9' />
+            <column datatype='real' name='Volatility_Index' ordinal='10' />
+            <column datatype='real' name='Investment_Amount' ordinal='11' />
+            <column datatype='real' name='Current_Value' ordinal='12' />
+            <column datatype='real' name='ROI_Percentage' ordinal='13' />
+            <column datatype='string' name='Risk_Category' ordinal='14' />
+            <column datatype='string' name='Asset_Type' ordinal='15' />
+            <column datatype='date' name='Date' ordinal='16' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Finance Data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Volume</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Volume]</local-name>
+            <parent-name>[Finance Data.csv]</parent-name>
+            <remote-alias>Volume</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Finance Data.csv_A5EF4EBC20994D02B39C2E3A0D4B228E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Revenue</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Revenue]</local-name>
+            <parent-name>[Finance Data.csv]</parent-name>
+            <remote-alias>Revenue</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Finance Data.csv_A5EF4EBC20994D02B39C2E3A0D4B228E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Net_Profit</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Net_Profit]</local-name>
+            <parent-name>[Finance Data.csv]</parent-name>
+            <remote-alias>Net_Profit</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Finance Data.csv_A5EF4EBC20994D02B39C2E3A0D4B228E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Operating_Income</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Operating_Income]</local-name>
+            <parent-name>[Finance Data.csv]</parent-name>
+            <remote-alias>Operating_Income</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Finance Data.csv_A5EF4EBC20994D02B39C2E3A0D4B228E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Debt_to_Equity_Ratio</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Debt_to_Equity_Ratio]</local-name>
+            <parent-name>[Finance Data.csv]</parent-name>
+            <remote-alias>Debt_to_Equity_Ratio</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Finance Data.csv_A5EF4EBC20994D02B39C2E3A0D4B228E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cash_Flow</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Cash_Flow]</local-name>
+            <parent-name>[Finance Data.csv]</parent-name>
+            <remote-alias>Cash_Flow</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Finance Data.csv_A5EF4EBC20994D02B39C2E3A0D4B228E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Profit_Margin</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Profit_Margin]</local-name>
+            <parent-name>[Finance Data.csv]</parent-name>
+            <remote-alias>Profit_Margin</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Finance Data.csv_A5EF4EBC20994D02B39C2E3A0D4B228E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Buy_Orders</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Buy_Orders]</local-name>
+            <parent-name>[Finance Data.csv]</parent-name>
+            <remote-alias>Buy_Orders</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Finance Data.csv_A5EF4EBC20994D02B39C2E3A0D4B228E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sell_Orders</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sell_Orders]</local-name>
+            <parent-name>[Finance Data.csv]</parent-name>
+            <remote-alias>Sell_Orders</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Finance Data.csv_A5EF4EBC20994D02B39C2E3A0D4B228E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Net_Inflows</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Net_Inflows]</local-name>
+            <parent-name>[Finance Data.csv]</parent-name>
+            <remote-alias>Net_Inflows</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Finance Data.csv_A5EF4EBC20994D02B39C2E3A0D4B228E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Volatility_Index</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Volatility_Index]</local-name>
+            <parent-name>[Finance Data.csv]</parent-name>
+            <remote-alias>Volatility_Index</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Finance Data.csv_A5EF4EBC20994D02B39C2E3A0D4B228E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Investment_Amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Investment_Amount]</local-name>
+            <parent-name>[Finance Data.csv]</parent-name>
+            <remote-alias>Investment_Amount</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Finance Data.csv_A5EF4EBC20994D02B39C2E3A0D4B228E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Current_Value</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Current_Value]</local-name>
+            <parent-name>[Finance Data.csv]</parent-name>
+            <remote-alias>Current_Value</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Finance Data.csv_A5EF4EBC20994D02B39C2E3A0D4B228E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ROI_Percentage</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ROI_Percentage]</local-name>
+            <parent-name>[Finance Data.csv]</parent-name>
+            <remote-alias>ROI_Percentage</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Finance Data.csv_A5EF4EBC20994D02B39C2E3A0D4B228E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Risk_Category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Risk_Category]</local-name>
+            <parent-name>[Finance Data.csv]</parent-name>
+            <remote-alias>Risk_Category</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Finance Data.csv_A5EF4EBC20994D02B39C2E3A0D4B228E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Asset_Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Asset_Type]</local-name>
+            <parent-name>[Finance Data.csv]</parent-name>
+            <remote-alias>Asset_Type</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Finance Data.csv_A5EF4EBC20994D02B39C2E3A0D4B228E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[Finance Data.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Finance Data.csv_A5EF4EBC20994D02B39C2E3A0D4B228E]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Asset Type' datatype='string' name='[Asset_Type]' role='dimension' type='nominal' />
+      <column caption='Buy Orders' datatype='integer' name='[Buy_Orders]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Calculation1]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='ZN(SUM([Profit_Margin])) - LOOKUP(ZN(SUM([Profit_Margin])), -1)'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Net Order' datatype='real' name='[Calculation_796855667029815296]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='Net Order = [Buy_Orders]-[Sell_Orders]' />
+      </column>
+      <column caption='Cash Flow' datatype='real' name='[Cash_Flow]' role='measure' type='quantitative' />
+      <column caption='Current Value' datatype='real' name='[Current_Value]' role='measure' type='quantitative' />
+      <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+      <column caption='Debt to Equity Ratio' datatype='real' name='[Debt_to_Equity_Ratio]' role='measure' type='quantitative' />
+      <column caption='Investment Amount' datatype='real' name='[Investment_Amount]' role='measure' type='quantitative' />
+      <column caption='Net Inflows' datatype='integer' name='[Net_Inflows]' role='measure' type='quantitative' />
+      <column caption='Net Profit' datatype='real' name='[Net_Profit]' role='measure' type='quantitative' />
+      <column caption='Operating Income' datatype='real' name='[Operating_Income]' role='measure' type='quantitative' />
+      <column caption='Profit Margin' datatype='real' name='[Profit_Margin]' role='measure' type='quantitative' />
+      <column caption='ROI Percentage' datatype='real' name='[ROI_Percentage]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Revenue]' role='measure' type='quantitative' />
+      <column caption='Risk Category' datatype='string' name='[Risk_Category]' role='dimension' type='nominal' />
+      <column caption='Sell Orders' datatype='integer' name='[Sell_Orders]' role='measure' type='quantitative' />
+      <column caption='Volatility Index' datatype='real' name='[Volatility_Index]' role='measure' type='quantitative' />
+      <column caption='Finance Data.csv' datatype='table' name='[__tableau_internal_object_id__].[Finance Data.csv_A5EF4EBC20994D02B39C2E3A0D4B228E]' role='measure' type='quantitative' />
+      <column-instance column='[Profit_Margin]' derivation='Sum' name='[diff:sum:Profit_Margin:qk]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-type='Rows' type='Difference'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Risk_Category]' derivation='None' name='[none:Risk_Category:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Buy_Orders]' derivation='Sum' name='[sum:Buy_Orders:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Current_Value]' derivation='Sum' name='[sum:Current_Value:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Investment_Amount]' derivation='Sum' name='[sum:Investment_Amount:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Profit_Margin]' derivation='Sum' name='[sum:Profit_Margin:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Revenue]' derivation='Sum' name='[sum:Revenue:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Sell_Orders]' derivation='Sum' name='[sum:Sell_Orders:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation1]' derivation='User' name='[usr:Calculation1:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' />
+      </column-instance>
+      <group caption='Action (Asset Type,MONTH(Date))' hidden='true' name='[Action (Asset Type,MONTH(Date))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Asset_Type]' />
+          <groupfilter function='level-members' level='[mn:Date:ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (MONTH(Date))' hidden='true' name='[Action (MONTH(Date))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[mn:Date:ok]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Arataki/AppData/Local/Temp/TableauTemp/#TableauTemp_0j81m2c1duxpeb19ewov705ixqtj.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='12/17/2025 01:56:03 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Volume</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Volume]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Volume</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Finance Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>472</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Finance Data.csv_A5EF4EBC20994D02B39C2E3A0D4B228E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Revenue</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Revenue]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Revenue</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Finance Data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>100012</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Finance Data.csv_A5EF4EBC20994D02B39C2E3A0D4B228E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Net_Profit</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Net_Profit]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Net_Profit</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Finance Data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>94790</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Finance Data.csv_A5EF4EBC20994D02B39C2E3A0D4B228E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Operating_Income</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Operating_Income]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Operating_Income</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Finance Data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>100012</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Finance Data.csv_A5EF4EBC20994D02B39C2E3A0D4B228E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Debt_to_Equity_Ratio</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Debt_to_Equity_Ratio]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Debt_to_Equity_Ratio</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Finance Data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>29816</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Finance Data.csv_A5EF4EBC20994D02B39C2E3A0D4B228E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Cash_Flow</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Cash_Flow]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Cash_Flow</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Finance Data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>100012</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Finance Data.csv_A5EF4EBC20994D02B39C2E3A0D4B228E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Profit_Margin</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Profit_Margin]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Profit_Margin</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Finance Data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>19686</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Finance Data.csv_A5EF4EBC20994D02B39C2E3A0D4B228E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Buy_Orders</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Buy_Orders]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Buy_Orders</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Finance Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>71</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Finance Data.csv_A5EF4EBC20994D02B39C2E3A0D4B228E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sell_Orders</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Sell_Orders]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sell_Orders</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Finance Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>100</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Finance Data.csv_A5EF4EBC20994D02B39C2E3A0D4B228E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Net_Inflows</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Net_Inflows]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Net_Inflows</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Finance Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>59</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Finance Data.csv_A5EF4EBC20994D02B39C2E3A0D4B228E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Volatility_Index</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Volatility_Index]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Volatility_Index</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Finance Data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16269</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Finance Data.csv_A5EF4EBC20994D02B39C2E3A0D4B228E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Investment_Amount</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Investment_Amount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Investment_Amount</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Finance Data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>100012</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Finance Data.csv_A5EF4EBC20994D02B39C2E3A0D4B228E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Current_Value</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Current_Value]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Current_Value</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Finance Data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>100012</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Finance Data.csv_A5EF4EBC20994D02B39C2E3A0D4B228E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ROI_Percentage</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[ROI_Percentage]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ROI_Percentage</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Finance Data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9970</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Finance Data.csv_A5EF4EBC20994D02B39C2E3A0D4B228E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Risk_Category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Risk_Category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Risk_Category</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Finance Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Finance Data.csv_A5EF4EBC20994D02B39C2E3A0D4B228E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Asset_Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Asset_Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Asset_Type</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Finance Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Finance Data.csv_A5EF4EBC20994D02B39C2E3A0D4B228E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Finance Data.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>10041</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Finance Data.csv_A5EF4EBC20994D02B39C2E3A0D4B228E]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Risk_Category:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;High&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Medium&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Low&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1rvt64d028b8dz11czbfh04hzu45].[sum:Buy_Orders:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1rvt64d028b8dz11czbfh04hzu45].[sum:Investment_Amount:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1rvt64d028b8dz11czbfh04hzu45].[diff:sum:Profit_Margin:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1rvt64d028b8dz11czbfh04hzu45].[sum:Profit_Margin:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1rvt64d028b8dz11czbfh04hzu45].[usr:Calculation1:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.1rvt64d028b8dz11czbfh04hzu45]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1rvt64d028b8dz11czbfh04hzu45].[sum:Current_Value:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.1rvt64d028b8dz11czbfh04hzu45].[sum:Revenue:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1rvt64d028b8dz11czbfh04hzu45].[sum:Sell_Orders:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Finance Data.csv' id='Finance Data.csv_A5EF4EBC20994D02B39C2E3A0D4B228E'>
+            <properties context=''>
+              <relation connection='textscan.041xi6807ck1xj11mlyxm1byo1pf' name='Finance Data.csv' table='[Finance Data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='Volume' ordinal='0' />
+                  <column datatype='real' name='Revenue' ordinal='1' />
+                  <column datatype='real' name='Net_Profit' ordinal='2' />
+                  <column datatype='real' name='Operating_Income' ordinal='3' />
+                  <column datatype='real' name='Debt_to_Equity_Ratio' ordinal='4' />
+                  <column datatype='real' name='Cash_Flow' ordinal='5' />
+                  <column datatype='real' name='Profit_Margin' ordinal='6' />
+                  <column datatype='integer' name='Buy_Orders' ordinal='7' />
+                  <column datatype='integer' name='Sell_Orders' ordinal='8' />
+                  <column datatype='integer' name='Net_Inflows' ordinal='9' />
+                  <column datatype='real' name='Volatility_Index' ordinal='10' />
+                  <column datatype='real' name='Investment_Amount' ordinal='11' />
+                  <column datatype='real' name='Current_Value' ordinal='12' />
+                  <column datatype='real' name='ROI_Percentage' ordinal='13' />
+                  <column datatype='string' name='Risk_Category' ordinal='14' />
+                  <column datatype='string' name='Asset_Type' ordinal='15' />
+                  <column datatype='date' name='Date' ordinal='16' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Average ROI and VolTILITY'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Finance Data' name='federated.1rvt64d028b8dz11czbfh04hzu45' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rvt64d028b8dz11czbfh04hzu45'>
+            <column caption='ROI Percentage' datatype='real' name='[ROI_Percentage]' role='measure' type='quantitative' />
+            <column caption='Volatility Index' datatype='real' name='[Volatility_Index]' role='measure' type='quantitative' />
+            <column-instance column='[ROI_Percentage]' derivation='Avg' name='[avg:ROI_Percentage:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Volatility_Index]' derivation='Avg' name='[avg:Volatility_Index:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1rvt64d028b8dz11czbfh04hzu45].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1rvt64d028b8dz11czbfh04hzu45].[avg:ROI_Percentage:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1rvt64d028b8dz11czbfh04hzu45].[avg:Volatility_Index:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1rvt64d028b8dz11czbfh04hzu45].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1rvt64d028b8dz11czbfh04hzu45].[:Measure Names]' value='237' />
+            <format attr='height' value='34' />
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+            <format attr='color' value='#0089c3' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height' field='[federated.1rvt64d028b8dz11czbfh04hzu45].[:Measure Names]' value='45' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+            <format attr='font-size' field='[federated.1rvt64d028b8dz11czbfh04hzu45].[:Measure Names]' value='15' />
+            <format attr='color' scope='cols' value='#0089c3' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='20' />
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1rvt64d028b8dz11czbfh04hzu45].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.1rvt64d028b8dz11czbfh04hzu45].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{0FC54599-E701-49E9-BB9D-6FC899C63144}' />
+    </worksheet>
+    <worksheet name='Investment By Year'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Finance Data' name='federated.1rvt64d028b8dz11czbfh04hzu45' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rvt64d028b8dz11czbfh04hzu45'>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column caption='Investment Amount' datatype='real' name='[Investment_Amount]' role='measure' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Investment_Amount]' derivation='Sum' name='[sum:Investment_Amount:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1rvt64d028b8dz11czbfh04hzu45].[mn:Date:ok]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[mn:Date:ok]' />
+              <groupfilter function='member' level='[mn:Date:ok]' member='3' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1rvt64d028b8dz11czbfh04hzu45].[mn:Date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='stroke-color' value='#ffffff' />
+            <format attr='stroke-size' value='1' />
+            <format attr='tick-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='vertical-align' value='bottom' />
+            <format attr='text-align' value='center' />
+            <format attr='color' value='#2e3b4e' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='band-color' scope='rows' value='#ffffff' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#0089c3' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#ffffff' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' value='#ffffff4b' />
+            <format attr='line-pattern-only' value='dotted' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-color' value='#000000' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='color' value='#0089c3' />
+          </style-rule>
+          <style-rule element='tooltip'>
+            <format attr='color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1rvt64d028b8dz11czbfh04hzu45].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1rvt64d028b8dz11czbfh04hzu45].[sum:Investment_Amount:qk]</rows>
+        <cols>[federated.1rvt64d028b8dz11czbfh04hzu45].[mn:Date:ok]</cols>
+      </table>
+      <simple-id uuid='{81295A10-6C94-4CD0-9C9D-5048E1A551C8}' />
+    </worksheet>
+    <worksheet name='Kpi'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Finance Data' name='federated.1rvt64d028b8dz11czbfh04hzu45' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rvt64d028b8dz11czbfh04hzu45'>
+            <column caption='Current Value' datatype='real' name='[Current_Value]' role='measure' type='quantitative' />
+            <column caption='Investment Amount' datatype='real' name='[Investment_Amount]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Volume]' role='measure' type='quantitative' />
+            <column-instance column='[Current_Value]' derivation='Sum' name='[sum:Current_Value:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Investment_Amount]' derivation='Sum' name='[sum:Investment_Amount:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Volume]' derivation='Sum' name='[sum:Volume:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1rvt64d028b8dz11czbfh04hzu45].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1rvt64d028b8dz11czbfh04hzu45].[sum:Investment_Amount:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1rvt64d028b8dz11czbfh04hzu45].[sum:Volume:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1rvt64d028b8dz11czbfh04hzu45].[sum:Current_Value:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1rvt64d028b8dz11czbfh04hzu45].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.1rvt64d028b8dz11czbfh04hzu45].[sum:Investment_Amount:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1rvt64d028b8dz11czbfh04hzu45].[sum:Volume:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1rvt64d028b8dz11czbfh04hzu45].[sum:Current_Value:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1rvt64d028b8dz11czbfh04hzu45].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1rvt64d028b8dz11czbfh04hzu45].[:Measure Names]' value='262' />
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+            <format attr='color' value='#0089c3' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height' field='[federated.1rvt64d028b8dz11czbfh04hzu45].[:Measure Names]' value='52' />
+            <format attr='background-color' field='[federated.1rvt64d028b8dz11czbfh04hzu45].[:Measure Names]' value='#ffffff' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.1rvt64d028b8dz11czbfh04hzu45].[:Measure Names]' value='#0089c3' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='20' />
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1rvt64d028b8dz11czbfh04hzu45].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.1rvt64d028b8dz11czbfh04hzu45].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{F0E8637D-8C09-47C8-A8EF-B5EDBC7063CF}' />
+    </worksheet>
+    <worksheet name='Month Wise Buy And Sell'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#0089c3'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Finance Data' name='federated.1rvt64d028b8dz11czbfh04hzu45' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rvt64d028b8dz11czbfh04hzu45'>
+            <column caption='Asset Type' datatype='string' name='[Asset_Type]' role='dimension' type='nominal' />
+            <column caption='Buy Orders' datatype='integer' name='[Buy_Orders]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column caption='Sell Orders' datatype='integer' name='[Sell_Orders]' role='measure' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Asset_Type]' derivation='None' name='[none:Asset_Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Buy_Orders]' derivation='Sum' name='[sum:Buy_Orders:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sell_Orders]' derivation='Sum' name='[sum:Sell_Orders:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.1rvt64d028b8dz11czbfh04hzu45].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.1rvt64d028b8dz11czbfh04hzu45].[sum:Buy_Orders:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1rvt64d028b8dz11czbfh04hzu45].[sum:Sell_Orders:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.1rvt64d028b8dz11czbfh04hzu45].[none:Asset_Type:nk]'>
+            <groupfilter function='level-members' level='[none:Asset_Type:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1rvt64d028b8dz11czbfh04hzu45].[mn:Date:ok]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1rvt64d028b8dz11czbfh04hzu45].[sum:Buy_Orders:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1rvt64d028b8dz11czbfh04hzu45].[none:Asset_Type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1rvt64d028b8dz11czbfh04hzu45].[sum:Sell_Orders:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='color' value='#0089c3' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' value='#0089c3' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='color' value='#0089c3' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='color' value='#0089c3' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='color' value='#0089c3' />
+          </style-rule>
+          <style-rule element='quick-filter-title'>
+            <format attr='color' value='#0089c3' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1rvt64d028b8dz11czbfh04hzu45].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1rvt64d028b8dz11czbfh04hzu45].[sum:Buy_Orders:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1rvt64d028b8dz11czbfh04hzu45].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1rvt64d028b8dz11czbfh04hzu45].[sum:Sell_Orders:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1rvt64d028b8dz11czbfh04hzu45].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1rvt64d028b8dz11czbfh04hzu45].[sum:Buy_Orders:qk] + [federated.1rvt64d028b8dz11czbfh04hzu45].[sum:Sell_Orders:qk])</rows>
+        <cols>[federated.1rvt64d028b8dz11czbfh04hzu45].[mn:Date:ok]</cols>
+      </table>
+      <simple-id uuid='{D7EE03AD-AA9F-4EEE-AAAA-CEBA41105A02}' />
+    </worksheet>
+    <worksheet name='Month Wise Revenue'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#0089c3'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Finance Data' name='federated.1rvt64d028b8dz11czbfh04hzu45' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rvt64d028b8dz11czbfh04hzu45'>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Revenue]' role='measure' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Revenue]' derivation='Sum' name='[sum:Revenue:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='color' value='#0089c3' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='tooltip'>
+            <format attr='color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1rvt64d028b8dz11czbfh04hzu45].[sum:Revenue:qk]</rows>
+        <cols>[federated.1rvt64d028b8dz11czbfh04hzu45].[mn:Date:ok]</cols>
+      </table>
+      <simple-id uuid='{A83C5E4A-9B6E-48C7-9A01-00E2DA9E16FA}' />
+    </worksheet>
+    <worksheet name='Month wise growth '>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Finance Data' name='federated.1rvt64d028b8dz11czbfh04hzu45' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rvt64d028b8dz11czbfh04hzu45'>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Revenue]' role='measure' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Revenue]' derivation='Sum' name='[sum:Revenue:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' value='#0089c3' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' value='#0089c3' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='color' value='#0089c3' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1rvt64d028b8dz11czbfh04hzu45].[sum:Revenue:qk]</rows>
+        <cols>[federated.1rvt64d028b8dz11czbfh04hzu45].[mn:Date:ok]</cols>
+      </table>
+      <simple-id uuid='{141D0F7B-34CC-4F89-AFB0-DC7F7B8C03BE}' />
+    </worksheet>
+    <worksheet name='Net Inflow'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Finance Data' name='federated.1rvt64d028b8dz11czbfh04hzu45' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rvt64d028b8dz11czbfh04hzu45'>
+            <column caption='Asset Type' datatype='string' name='[Asset_Type]' role='dimension' type='nominal' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column caption='Net Inflows' datatype='integer' name='[Net_Inflows]' role='measure' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Asset_Type]' derivation='None' name='[none:Asset_Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Net_Inflows]' derivation='Sum' name='[sum:Net_Inflows:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1rvt64d028b8dz11czbfh04hzu45].[none:Asset_Type:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1rvt64d028b8dz11czbfh04hzu45].[sum:Net_Inflows:qk]' shelf='rows'>
+              <sort-filter-info>
+                <sort-filter level-name='[federated.1rvt64d028b8dz11czbfh04hzu45].[mn:Date:ok]' member-value='8' />
+              </sort-filter-info>
+            </shelf-sort-v2>
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' value='#0089c3' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height' field='[federated.1rvt64d028b8dz11czbfh04hzu45].[mn:Date:ok]' value='21' />
+            <format attr='font-size' data-class='subtotal' scope='cols' value='5' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' field='[federated.1rvt64d028b8dz11czbfh04hzu45].[mn:Date:ok]' value='center' />
+            <format attr='font-size' value='8' />
+            <format attr='font-size' scope='rows' value='5' />
+            <format attr='color' value='#0089c3' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1rvt64d028b8dz11czbfh04hzu45].[sum:Net_Inflows:qk]' palette='tableau-orange-light' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='color' value='#0089c3' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1rvt64d028b8dz11czbfh04hzu45].[sum:Net_Inflows:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1rvt64d028b8dz11czbfh04hzu45].[none:Asset_Type:nk]</rows>
+        <cols>[federated.1rvt64d028b8dz11czbfh04hzu45].[mn:Date:ok]</cols>
+      </table>
+      <simple-id uuid='{25E69D8B-8A85-480F-B3DA-59EC8D160803}' />
+    </worksheet>
+    <worksheet name='Quarter Revenue'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#0089c3'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Finance Data' name='federated.1rvt64d028b8dz11czbfh04hzu45' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rvt64d028b8dz11czbfh04hzu45'>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column caption='Profit Margin' datatype='real' name='[Profit_Margin]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Revenue]' role='measure' type='quantitative' />
+            <column-instance column='[Date]' derivation='Quarter' name='[qr:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Profit_Margin]' derivation='Sum' name='[sum:Profit_Margin:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Revenue]' derivation='Sum' name='[sum:Revenue:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' field='[federated.1rvt64d028b8dz11czbfh04hzu45].[sum:Revenue:qk]' value='#0089c3' />
+            <format attr='color' value='#0089c3' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='background-color' field='[federated.1rvt64d028b8dz11czbfh04hzu45].[sum:Revenue:qk]' value='#ffffff' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.1rvt64d028b8dz11czbfh04hzu45].[qr:Date:ok]' value='-90' />
+            <format attr='color' scope='rows' value='#0089c3' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <_.fcp.IndividualControlFormatting.true...style-rule element='legend'>
+            <_.fcp.IndividualControlFormatting.true...format attr='color' field='[federated.1rvt64d028b8dz11czbfh04hzu45].[sum:Profit_Margin:qk]' id='legend-color' value='#2e3b4e' />
+          </_.fcp.IndividualControlFormatting.true...style-rule>
+          <_.fcp.IndividualControlFormatting.true...style-rule element='legend-title'>
+            <_.fcp.IndividualControlFormatting.true...format attr='color' field='[federated.1rvt64d028b8dz11czbfh04hzu45].[sum:Profit_Margin:qk]' id='legend-color' value='#0089c3' />
+          </_.fcp.IndividualControlFormatting.true...style-rule>
+          <_.fcp.IndividualControlFormatting.true...style-rule element='quick-filter'>
+            <_.fcp.IndividualControlFormatting.true...format attr='color' field='[federated.1rvt64d028b8dz11czbfh04hzu45].[yr:Date:ok]' value='#2e3b4e' />
+          </_.fcp.IndividualControlFormatting.true...style-rule>
+          <_.fcp.IndividualControlFormatting.true...style-rule element='quick-filter-title'>
+            <_.fcp.IndividualControlFormatting.true...format attr='color' field='[federated.1rvt64d028b8dz11czbfh04hzu45].[yr:Date:ok]' value='#0089c3' />
+          </_.fcp.IndividualControlFormatting.true...style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1rvt64d028b8dz11czbfh04hzu45].[sum:Profit_Margin:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1rvt64d028b8dz11czbfh04hzu45].[sum:Revenue:qk]</rows>
+        <cols>[federated.1rvt64d028b8dz11czbfh04hzu45].[qr:Date:ok]</cols>
+      </table>
+      <simple-id uuid='{E2134864-8078-4A3C-BDE1-571264DCAB94}' />
+    </worksheet>
+    <worksheet name='Revenue By Asset Type'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#0089c3'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Finance Data' name='federated.1rvt64d028b8dz11czbfh04hzu45' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rvt64d028b8dz11czbfh04hzu45'>
+            <column caption='Asset Type' datatype='string' name='[Asset_Type]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Revenue]' role='measure' type='quantitative' />
+            <column-instance column='[Asset_Type]' derivation='None' name='[none:Asset_Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Revenue]' derivation='Sum' name='[sum:Revenue:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' value='#2e3b4e' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' value='#0089c3' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1rvt64d028b8dz11czbfh04hzu45].[sum:Revenue:qk]</rows>
+        <cols>[federated.1rvt64d028b8dz11czbfh04hzu45].[none:Asset_Type:nk]</cols>
+      </table>
+      <simple-id uuid='{5E0A2614-DE5B-4FEB-8805-18CC3760BFE8}' />
+    </worksheet>
+    <worksheet name='Risk And Reward'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#0089c3'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Finance Data' name='federated.1rvt64d028b8dz11czbfh04hzu45' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rvt64d028b8dz11czbfh04hzu45'>
+            <column caption='Investment Amount' datatype='real' name='[Investment_Amount]' role='measure' type='quantitative' />
+            <column caption='ROI Percentage' datatype='real' name='[ROI_Percentage]' role='measure' type='quantitative' />
+            <column caption='Risk Category' datatype='string' name='[Risk_Category]' role='dimension' type='nominal' />
+            <column caption='Volatility Index' datatype='real' name='[Volatility_Index]' role='measure' type='quantitative' />
+            <column-instance column='[ROI_Percentage]' derivation='Avg' name='[avg:ROI_Percentage:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Volatility_Index]' derivation='Avg' name='[avg:Volatility_Index:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Risk_Category]' derivation='None' name='[none:Risk_Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Investment_Amount]' derivation='Sum' name='[sum:Investment_Amount:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' value='#0089c3' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' value='#0089c3' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='legend'>
+            <_.fcp.IndividualControlFormatting.true...format attr='color' field='[federated.1rvt64d028b8dz11czbfh04hzu45].[none:Risk_Category:nk]' id='legend-color' value='#2e3b4e' />
+            <format attr='color' value='#2e3b4e' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <_.fcp.IndividualControlFormatting.true...format attr='color' field='[federated.1rvt64d028b8dz11czbfh04hzu45].[none:Risk_Category:nk]' id='legend-color' value='#0089c3' />
+            <format attr='color' value='#0089c3' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.1rvt64d028b8dz11czbfh04hzu45].[none:Risk_Category:nk]' />
+              <size column='[federated.1rvt64d028b8dz11czbfh04hzu45].[sum:Investment_Amount:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1rvt64d028b8dz11czbfh04hzu45].[avg:Volatility_Index:qk]</rows>
+        <cols>[federated.1rvt64d028b8dz11czbfh04hzu45].[avg:ROI_Percentage:qk]</cols>
+      </table>
+      <simple-id uuid='{988CF782-804E-47C3-B56E-1792D1F48632}' />
+    </worksheet>
+    <worksheet name='Roi By Asset'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#0089c3'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Finance Data' name='federated.1rvt64d028b8dz11czbfh04hzu45' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rvt64d028b8dz11czbfh04hzu45'>
+            <column caption='Asset Type' datatype='string' name='[Asset_Type]' role='dimension' type='nominal' />
+            <column caption='ROI Percentage' datatype='real' name='[ROI_Percentage]' role='measure' type='quantitative' />
+            <column-instance column='[ROI_Percentage]' derivation='Avg' name='[avg:ROI_Percentage:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Asset_Type]' derivation='None' name='[none:Asset_Type:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' value='#0089c3' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='color' data-class='subtotal' value='#0089c3' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' scope='rows' value='#0089c3' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='color' value='#0089c3' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='color' value='#2e3b4e' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='color' value='#0089c3' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1rvt64d028b8dz11czbfh04hzu45].[avg:ROI_Percentage:qk]</rows>
+        <cols>[federated.1rvt64d028b8dz11czbfh04hzu45].[none:Asset_Type:nk]</cols>
+      </table>
+      <simple-id uuid='{B827B841-4B4C-4E11-9E3D-0885CAB309C8}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{E949EA50-818F-4FD7-8E24-2C41689B221F}' />
+    </worksheet>
+    <worksheet name='Year Wise Asset Growth'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#0089c3'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Finance Data' name='federated.1rvt64d028b8dz11czbfh04hzu45' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rvt64d028b8dz11czbfh04hzu45'>
+            <column caption='Asset Type' datatype='string' name='[Asset_Type]' role='dimension' type='nominal' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Revenue]' role='measure' type='quantitative' />
+            <column-instance column='[Asset_Type]' derivation='None' name='[none:Asset_Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Revenue]' derivation='Sum' name='[sum:Revenue:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1rvt64d028b8dz11czbfh04hzu45].[none:Asset_Type:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Asset_Type:nk]' member='&quot;Bond&quot;' />
+              <groupfilter function='member' level='[none:Asset_Type:nk]' member='&quot;Commodity&quot;' />
+              <groupfilter function='member' level='[none:Asset_Type:nk]' member='&quot;Crypto&quot;' />
+              <groupfilter function='member' level='[none:Asset_Type:nk]' member='&quot;Gold&quot;' />
+              <groupfilter function='member' level='[none:Asset_Type:nk]' member='&quot;RealEstate&quot;' />
+              <groupfilter function='member' level='[none:Asset_Type:nk]' member='&quot;Stock&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1rvt64d028b8dz11czbfh04hzu45].[none:Asset_Type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' value='#0089c3' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' value='#0089c3' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='color' value='#0089c3' />
+          </style-rule>
+          <style-rule element='quick-filter-title'>
+            <format attr='color' value='#0089c3' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1rvt64d028b8dz11czbfh04hzu45].[sum:Revenue:qk]</rows>
+        <cols>[federated.1rvt64d028b8dz11czbfh04hzu45].[yr:Date:ok]</cols>
+      </table>
+      <simple-id uuid='{15C5EE17-A2B4-4574-AF88-D394B469B75E}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#f7f9fb' />
+        </style-rule>
+      </style>
+      <size maxheight='860' maxwidth='1250' minheight='560' minwidth='420' sizing-mode='range' />
+      <datasources>
+        <datasource caption='Finance Data' name='federated.1rvt64d028b8dz11czbfh04hzu45' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1rvt64d028b8dz11czbfh04hzu45'>
+        <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+        <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='34306' id='5' name='Month Wise Revenue' w='46545' x='52303' y='64644' />
+        <zone h='33256' id='6' name='Quarter Revenue' w='33333' x='65273' y='31855' />
+        <zone h='9464' id='7' mode='checkdropdown' name='Quarter Revenue' param='[federated.1rvt64d028b8dz11czbfh04hzu45].[yr:Date:ok]' type-v2='filter' values='all' w='10711' x='74627' y='17321' />
+        <zone h='8868' id='8' name='Quarter Revenue' pane-specification-id='0' param='[federated.1rvt64d028b8dz11czbfh04hzu45].[sum:Profit_Margin:qk]' type-v2='color' w='8480' x='90240' y='15286' />
+        <zone h='31272' id='9' name='Revenue By Asset Type' w='48970' x='1212' y='65578' />
+        <zone h='31972' id='10' name='Investment By Year' w='42485' x='1091' y='31155' />
+        <zone forceUpdate='true' h='10536' id='13' type-v2='text' w='65759' x='1580' y='2500'>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#0089c3' fontname='Arial Black' fontsize='30'>Revenue And Investment</run>
+          </formatted-text>
+        </zone>
+        <zone h='19821' id='16' name='Kpi' w='72344' x='263' y='13214' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1550' minheight='1550' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='36' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='35' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone forceUpdate='true' h='10536' id='13' type-v2='text' w='65759' x='1580' y='2500'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#0089c3' fontname='Arial Black' fontsize='30'>Revenue And Investment</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='170' h='19821' id='16' is-fixed='true' name='Kpi' w='72344' x='263' y='13214'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='275' h='31972' id='10' is-fixed='true' name='Investment By Year' w='42485' x='1091' y='31155'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9464' id='7' mode='checkdropdown' name='Quarter Revenue' param='[federated.1rvt64d028b8dz11czbfh04hzu45].[yr:Date:ok]' type-v2='filter' values='all' w='10711' x='74627' y='17321'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='33256' id='6' is-fixed='true' name='Quarter Revenue' w='33333' x='65273' y='31855'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8868' id='8' name='Quarter Revenue' pane-specification-id='0' param='[federated.1rvt64d028b8dz11czbfh04hzu45].[sum:Profit_Margin:qk]' type-v2='color' w='8480' x='90240' y='15286'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='34306' id='5' is-fixed='true' name='Month Wise Revenue' w='46545' x='52303' y='64644'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='269' h='31272' id='9' is-fixed='true' name='Revenue By Asset Type' w='48970' x='1212' y='65578'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{85AC5E7A-FD24-49A1-93A4-49A95E3E3F0F}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 2'>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#f7f9fb' />
+        </style-rule>
+      </style>
+      <size maxheight='860' maxwidth='1250' minheight='560' minwidth='420' sizing-mode='range' />
+      <zones>
+        <zone h='52042' id='3' name='Roi By Asset' w='39440' x='0' y='46908' />
+        <zone h='52275' id='4' name='Risk And Reward' w='59760' x='39920' y='46441' />
+        <zone h='22857' id='5' name='Risk And Reward' pane-specification-id='0' param='[federated.1rvt64d028b8dz11czbfh04hzu45].[sum:Investment_Amount:qk]' type-v2='size' w='8165' x='89991' y='2500' />
+        <zone h='15000' id='6' name='Risk And Reward' pane-specification-id='0' param='[federated.1rvt64d028b8dz11czbfh04hzu45].[none:Risk_Category:nk]' type-v2='color' w='8165' x='80685' y='2321' />
+        <zone h='19020' id='7' name='Average ROI and VolTILITY' w='47200' x='1920' y='23687' />
+        <zone forceUpdate='true' h='13393' id='13' type-v2='text' w='74890' x='-88' y='714'>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#0089c3' fontname='Arial Black' fontsize='30'>Return On Investment And Volatility</run>
+          </formatted-text>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1000' minheight='1000' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='33' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='32' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone forceUpdate='true' h='13393' id='13' type-v2='text' w='74890' x='-88' y='714'>
+                  <formatted-text>
+                    <run fontalignment='1' fontcolor='#0089c3' fontname='Arial Black' fontsize='30'>Return On Investment And Volatility</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='163' h='19020' id='7' is-fixed='true' name='Average ROI and VolTILITY' w='47200' x='1920' y='23687'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='52275' id='4' is-fixed='true' name='Risk And Reward' w='59760' x='39920' y='46441'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='22857' id='5' name='Risk And Reward' pane-specification-id='0' param='[federated.1rvt64d028b8dz11czbfh04hzu45].[sum:Investment_Amount:qk]' type-v2='size' w='8165' x='89991' y='2500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='15000' id='6' name='Risk And Reward' pane-specification-id='0' param='[federated.1rvt64d028b8dz11czbfh04hzu45].[none:Risk_Category:nk]' type-v2='color' w='8165' x='80685' y='2321'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='52042' id='3' is-fixed='true' name='Roi By Asset' w='39440' x='0' y='46908'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{8A6EC861-B16E-462F-8135-B489BFDBEBAD}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 3'>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#f7f9fb' />
+        </style-rule>
+      </style>
+      <size maxheight='960' maxwidth='1850' minheight='560' minwidth='820' sizing-mode='range' />
+      <datasources>
+        <datasource caption='Finance Data' name='federated.1rvt64d028b8dz11czbfh04hzu45' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1rvt64d028b8dz11czbfh04hzu45'>
+        <column caption='Asset Type' datatype='string' name='[Asset_Type]' role='dimension' type='nominal' />
+        <column-instance column='[Asset_Type]' derivation='None' name='[none:Asset_Type:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='33929' id='5' name='Net Inflow' w='111238' x='966' y='61250' />
+        <zone h='13571' id='6' name='Net Inflow' pane-specification-id='0' param='[federated.1rvt64d028b8dz11czbfh04hzu45].[sum:Net_Inflows:qk]' type-v2='color' w='12291' x='85162' y='44286' />
+        <zone h='43393' id='8' name='Month Wise Buy And Sell' w='80685' x='263' y='15536' />
+        <zone h='13318' id='9' mode='checkdropdown' name='Month Wise Buy And Sell' param='[federated.1rvt64d028b8dz11czbfh04hzu45].[none:Asset_Type:nk]' type-v2='filter' w='14043' x='65945' y='5724' />
+        <zone h='10357' id='10' name='Month Wise Buy And Sell' pane-specification-id='1' param='[federated.1rvt64d028b8dz11czbfh04hzu45].[:Measure Names]' type-v2='color' w='12291' x='86304' y='12679' />
+        <zone forceUpdate='true' h='8750' id='11' type-v2='text' w='20808' x='702' y='5000'>
+          <formatted-text>
+            <run bold='true' fontcolor='#0089c3' fontsize='20'>Performance</run>
+          </formatted-text>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='850' minheight='850' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='29' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='28' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone forceUpdate='true' h='8750' id='11' type-v2='text' w='20808' x='702' y='5000'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#0089c3' fontsize='20'>Performance</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='13318' id='9' mode='checkdropdown' name='Month Wise Buy And Sell' param='[federated.1rvt64d028b8dz11czbfh04hzu45].[none:Asset_Type:nk]' type-v2='filter' w='14043' x='65945' y='5724'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='43393' id='8' is-fixed='true' name='Month Wise Buy And Sell' w='80685' x='263' y='15536'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='10357' id='10' name='Month Wise Buy And Sell' pane-specification-id='1' param='[federated.1rvt64d028b8dz11czbfh04hzu45].[:Measure Names]' type-v2='color' w='12291' x='86304' y='12679'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='33929' id='5' is-fixed='true' name='Net Inflow' w='111238' x='966' y='61250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='13571' id='6' name='Net Inflow' pane-specification-id='0' param='[federated.1rvt64d028b8dz11czbfh04hzu45].[sum:Net_Inflows:qk]' type-v2='color' w='12291' x='85162' y='44286'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{276FFCF5-B17B-4EF6-9924-DF37709662A6}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 4'>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#ffffff' />
+        </style-rule>
+      </style>
+      <size maxheight='860' maxwidth='1150' minheight='560' minwidth='420' sizing-mode='range' />
+      <datasources>
+        <datasource caption='Finance Data' name='federated.1rvt64d028b8dz11czbfh04hzu45' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1rvt64d028b8dz11czbfh04hzu45'>
+        <column caption='Asset Type' datatype='string' name='[Asset_Type]' role='dimension' type='nominal' />
+        <column-instance column='[Asset_Type]' derivation='None' name='[none:Asset_Type:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='38273' id='3' name='Year Wise Asset Growth' w='86783' x='1739' y='17970' />
+        <zone h='7857' id='4' mode='checkdropdown' name='Year Wise Asset Growth' param='[federated.1rvt64d028b8dz11czbfh04hzu45].[none:Asset_Type:nk]' type-v2='filter' w='24583' x='68657' y='11250' />
+        <zone forceUpdate='true' h='12857' id='5' type-v2='text' w='25285' x='4214' y='3393'>
+          <formatted-text>
+            <run bold='true' fontcolor='#0089c3' fontsize='20'>Year Wise Growth</run>
+          </formatted-text>
+        </zone>
+        <zone h='34539' id='12' name='Month wise growth ' w='94522' x='1826' y='61960' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='750' minheight='750' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='24' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='23' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone forceUpdate='true' h='12857' id='5' type-v2='text' w='25285' x='4214' y='3393'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#0089c3' fontsize='20'>Year Wise Growth</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7857' id='4' mode='checkdropdown' name='Year Wise Asset Growth' param='[federated.1rvt64d028b8dz11czbfh04hzu45].[none:Asset_Type:nk]' type-v2='filter' w='24583' x='68657' y='11250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='38273' id='3' is-fixed='true' name='Year Wise Asset Growth' w='86783' x='1739' y='17970'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='34539' id='12' is-fixed='true' name='Month wise growth ' w='94522' x='1826' y='61960'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{790F0656-E342-4D44-9DDD-5C5BAA8ABB5B}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 5'>
+      <style />
+      <size maxheight='860' maxwidth='1150' minheight='560' minwidth='420' sizing-mode='range' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98134' id='3' is-centered='0' is-scaled='1' param='C:/Users/Arataki/OneDrive/Pictures/Screenshots/Screenshot 2025-12-17 195243.png' type-v2='bitmap' w='98608' x='696' y='933'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='15' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='14' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone fixed-size='280' h='98134' id='3' is-centered='0' is-fixed='true' is-scaled='1' param='C:/Users/Arataki/OneDrive/Pictures/Screenshots/Screenshot 2025-12-17 195243.png' type-v2='bitmap' w='98608' x='696' y='933'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{2F64574B-2234-4A63-BA38-CFE81C249AC4}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 6'>
+      <style />
+      <size maxheight='960' maxwidth='1220' minheight='660' minwidth='320' sizing-mode='range' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone forceUpdate='true' h='98134' id='3' type-v2='text' w='98688' x='656' y='933'>
+            <formatted-text>
+              <run fontalignment='1' fontcolor='#000000' fontname='Arial Black' fontsize='72'>Conclusion</run>
+              <run fontalignment='1'>Æ&#10;&#10;&#10;&#10;&#10;</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='28'>*</run>
+              <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='28'> Overall financial performance shows </run>
+              <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='28'>steady growth with controlled risk</run>
+              <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='28'> across asset types.</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='28'> * Revenue and profitability trends</run>
+              <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='28'> indicate stronger performance in high-ROI investments.</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='28'>*</run>
+              <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='28'> Assets with </run>
+              <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='28'>balanced volatility and consistent cash flow</run>
+              <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='28'> deliver the most stable returns.</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='28'>*</run>
+              <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='28'> Higher investment amounts do not always guarantee higher ROI — </run>
+              <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='28'>efficiency matters</run>
+              <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='28'>.</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='28'>*</run>
+              <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='28'> Risk-aware asset allocation improves </run>
+              <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='28'>long-term portfolio sustainability</run>
+              <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='28'>.</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='28'>*</run>
+              <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='28'> Data-driven insights support </run>
+              <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='28'>better investment decision-making</run>
+              <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='28'> and strategic planning.</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='8' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='7' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone forceUpdate='true' h='98134' id='3' type-v2='text' w='98688' x='656' y='933'>
+                  <formatted-text>
+                    <run fontalignment='1' fontcolor='#000000' fontname='Arial Black' fontsize='72'>Conclusion</run>
+                    <run fontalignment='1'>Æ&#10;&#10;&#10;&#10;&#10;</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='28'>*</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='28'> Overall financial performance shows </run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='28'>steady growth with controlled risk</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='28'> across asset types.</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='28'> * Revenue and profitability trends</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='28'> indicate stronger performance in high-ROI investments.</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='28'>*</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='28'> Assets with </run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='28'>balanced volatility and consistent cash flow</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='28'> deliver the most stable returns.</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='28'>*</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='28'> Higher investment amounts do not always guarantee higher ROI — </run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='28'>efficiency matters</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='28'>.</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='28'>*</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='28'> Risk-aware asset allocation improves </run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='28'>long-term portfolio sustainability</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='28'>.</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='28'>*</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='28'> Data-driven insights support </run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='28'>better investment decision-making</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='28'> and strategic planning.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{C6015BE2-10B0-4AA9-8135-401B78B684AB}' />
+    </dashboard>
+    <dashboard name='Story 1' type='storyboard'>
+      <style>
+        <style-rule element='story-description'>
+          <format attr='background-color' id='story-description_6' value='#00000000' />
+          <format attr='border-width' id='story-description_6' value='0' />
+          <format attr='border-style' id='story-description_6' value='none' />
+        </style-rule>
+      </style>
+      <size maxheight='864' maxwidth='1116' minheight='864' minwidth='1116' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98148' id='1' param='vert' removable='false' type-v2='layout-flow' w='98566' x='717' y='926'>
+            <zone h='3819' id='3' type-v2='title' w='98566' x='717' y='926' />
+            <zone h='11690' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98566' x='717' y='4745' />
+            <zone h='82639' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98566' x='717' y='16435'>
+              <flipboard active-id='1' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='Financial report' captured-sheet='Dashboard 5' id='4' />
+                  <story-point caption='Revenue And Investment' captured-sheet='Dashboard 1' id='1'>
+                    <capturedDeltas>
+                      <worksheet name='Month Wise Revenue'>
+                        <selection-collection />
+                      </worksheet>
+                    </capturedDeltas>
+                  </story-point>
+                  <story-point caption='Return on Investment And Volatility' captured-sheet='Dashboard 2' id='3' />
+                  <story-point caption='Performance' captured-sheet='Dashboard 3' id='5' />
+                  <story-point caption='Year Wise Asset growth' captured-sheet='Dashboard 4' id='6' />
+                  <story-point caption='Conclusion' captured-sheet='Dashboard 6' id='7' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone flipboard-zone-id='5' forceUpdate='true' h='18171' hidden='true' id='6' story-point-id='4' type-v2='text' w='47043' x='22491' y='19560'>
+          <formatted-text>
+            <run bold='true' fontcolor='#ffffff' fontsize='48'>Decision Making </run>
+          </formatted-text>
+        </zone>
+      </zones>
+      <simple-id uuid='{7FD30943-CB37-4DB3-A83B-13C4C93E385E}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Month Wise Revenue'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5DDE5B50-1F50-4943-8F51-9179FAD9DB7C}' />
+    </window>
+    <window class='worksheet' name='Quarter Revenue'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1rvt64d028b8dz11czbfh04hzu45].[sum:Profit_Margin:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{35A3981F-128A-404E-B80F-676D3DFB7277}' />
+    </window>
+    <window class='worksheet' name='Revenue By Asset Type'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E1A4062C-8537-4AC2-90B3-49ECA8888F1F}' />
+    </window>
+    <window class='worksheet' name='Investment By Year'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1rvt64d028b8dz11czbfh04hzu45].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A65785F1-D8D4-4FE8-9514-0B6D97E5ACA0}' />
+    </window>
+    <window class='worksheet' name='Month Wise Buy And Sell'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1rvt64d028b8dz11czbfh04hzu45].[none:Asset_Type:nk]' type='filter' />
+            <card pane-specification-id='1' param='[federated.1rvt64d028b8dz11czbfh04hzu45].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FA09036A-EDEE-42E0-BD47-93066D6350D1}' />
+    </window>
+    <window class='worksheet' name='Average ROI and VolTILITY'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <floating-toolbar-visibility value='1' />
+      </viewpoint>
+      <simple-id uuid='{D3243B78-C0D8-4A62-9DFE-DD50AE5D8153}' />
+    </window>
+    <window class='worksheet' name='Roi By Asset'>
+      <cards>
+        <edge name='left'>
+          <strip size='166'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{710BCC2D-73B2-4176-88BA-C5CC97917471}' />
+    </window>
+    <window class='worksheet' name='Risk And Reward'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1rvt64d028b8dz11czbfh04hzu45].[sum:Investment_Amount:qk]' type='size' />
+            <card pane-specification-id='0' param='[federated.1rvt64d028b8dz11czbfh04hzu45].[none:Risk_Category:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3779A2FA-F773-4B28-A9B8-195CF75AC4C4}' />
+    </window>
+    <window class='worksheet' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C3388A34-11F5-4B9D-8C88-4EAB9BDD7FF4}' />
+    </window>
+    <window class='worksheet' name='Kpi'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='39'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DE47C034-2915-4291-90CB-5F2C4E18C897}' />
+    </window>
+    <window class='worksheet' name='Net Inflow'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{84E738D8-F77A-4779-A45B-E54B3624938F}' />
+    </window>
+    <window class='worksheet' name='Year Wise Asset Growth'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='checkdropdown' param='[federated.1rvt64d028b8dz11czbfh04hzu45].[none:Asset_Type:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CC955782-8F79-4B6B-B4D7-9D49FCD82F1D}' />
+    </window>
+    <window class='worksheet' name='Month wise growth '>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F6379512-4EF5-48C4-B658-959A60EFD5EF}' />
+    </window>
+    <window class='dashboard' name='Dashboard 2'>
+      <viewpoints>
+        <viewpoint name='Average ROI and VolTILITY'>
+          <floating-toolbar-visibility value='1' />
+        </viewpoint>
+        <viewpoint name='Risk And Reward'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Roi By Asset'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{DE1B750E-A96C-412F-A552-5F31C75A09F2}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Investment By Year'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Kpi' />
+        <viewpoint name='Month Wise Revenue'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Quarter Revenue'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Revenue By Asset Type'>
+          <zoom type='entire-view' />
+          <floating-toolbar-visibility value='1' />
+          <default-map-tool-selection tool='16' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{0E3C3261-E68D-4796-BFE3-B330F9FC58D4}' />
+    </window>
+    <window class='dashboard' name='Dashboard 3'>
+      <viewpoints>
+        <viewpoint name='Month Wise Buy And Sell'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Net Inflow' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{B37C3EE5-34E7-4349-9CBF-C144D77A849C}' />
+    </window>
+    <window class='dashboard' name='Dashboard 4'>
+      <viewpoints>
+        <viewpoint name='Month wise growth '>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Year Wise Asset Growth'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{30066D75-1B04-4099-808A-6B6603BE348C}' />
+    </window>
+    <window class='dashboard' name='Dashboard 5'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{33AFA2D7-3999-4E0D-BE86-370EB63FD819}' />
+    </window>
+    <window class='dashboard' name='Dashboard 6'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{5F63E67E-A921-44D0-A96A-DC59DC038A71}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Story 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{8DAC26AC-EA11-4CC7-91EA-B50CF57B617F}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Story 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
